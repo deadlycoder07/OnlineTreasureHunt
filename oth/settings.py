@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'oth.wsgi.application'
 DATABASES = {     
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('NAME'),
-        'USER': config('HOST'),
+        'NAME': 'oth',
+        'USER': 'oth',
         'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT'),
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
